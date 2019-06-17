@@ -20,21 +20,21 @@ it("should create an action to search robots", ()=>{
     expect(actions.changeSearchField(text)).toEqual(expectedAction);
 });
 
-it("should handle requesting robot API", ()=>{
+// it("should handle requesting robot API", ()=>{
 
-    const store = mockStore();
-    // Dispatch the action
-    return store.dispatch(actions.requestRobots())
-    .then(response=> response.json())
-    .then(data => {
-        const action = store.getActions()
-        expect(action[0]).toEqual({type:REQUEST_ROBOTS_SUCCESS, payload:data})
-      })
-    // // Test if your store dispatched the expected actions
-    // const action = store.getActions()
+//     const store = mockStore();
+//     // Dispatch the action
+//     return store.dispatch(actions.requestRobots())
+//     .then(response=> response.json())
+//     .then(data => {
+//         const action = store.getActions()
+//         expect(action[0]).toEqual({type:REQUEST_ROBOTS_SUCCESS, payload:data})
+//       })
+//     // // Test if your store dispatched the expected actions
+//     // const action = store.getActions()
 
-    // const expectedAction = {
-    //     type:REQUEST_ROBOTS_PENDING,
-    // }
-    // expect(action).toEqual([expectedAction]);
-});
+//     // const expectedAction = {
+//     //     type:REQUEST_ROBOTS_PENDING,
+//     // }
+//     // expect(action).toEqual([expectedAction]);
+// });
