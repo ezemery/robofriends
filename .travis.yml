@@ -17,4 +17,4 @@ deploy:
     env: "Robofriends-env"
     bucket_name: "elasticbeanstalk-us-east-1-127772487405"
     on:
-        branch:master
+        branch: "master"
